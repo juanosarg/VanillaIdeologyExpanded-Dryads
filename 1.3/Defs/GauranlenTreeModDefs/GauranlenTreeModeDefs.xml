@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GauranlenTreeModeDef>
+		<defName>VDE_Stonedigger</defName>
+		<label>stonedigger</label>
+		<description>todo.</description>
+		<pawnKindDef>VDE_Dryad_Stonedigger</pawnKindDef>
+		<drawPosition>(0.833, 0)</drawPosition>
+		<displayedStats>
+			<li>MaxHitPoints</li>
+			<li>MoveSpeed</li>
+		</displayedStats>
+		<hyperlinks>
+			<ThingDef>VDE_Dryad_Stonedigger</ThingDef>
+		</hyperlinks>
+	</GauranlenTreeModeDef>
+	<GauranlenTreeModeDef>
+		<defName>VDE_Spitter</defName>
+		<label>spitter</label>
+		<description>todo.</description>
+		<pawnKindDef>VDE_Dryad_Spitter</pawnKindDef>
+		<drawPosition>(0.833, 0.1665)</drawPosition>
+		<displayedStats>
+			<li>MaxHitPoints</li>
+			<li>MoveSpeed</li>
+			<li>ArmorRating_Blunt</li>
+			<li>ArmorRating_Sharp</li>
+		</displayedStats>
+		<hyperlinks>
+			<ThingDef>VDE_Dryad_Spitter</ThingDef>
+		</hyperlinks>
+	</GauranlenTreeModeDef>
+	<GauranlenTreeModeDef>
+		<defName>VDE_Gaubricmaker</defName>
+		<label>gaubricmaker</label>
+		<description>todo.</description>
+		<pawnKindDef>VDE_Dryad_Gaubricmaker</pawnKindDef>
+		<drawPosition>(0.833, 0.333)</drawPosition>
+		<displayedStats>
+			<li>MaxHitPoints</li>
+			<li>MoveSpeed</li>
+		</displayedStats>
+		<hyperlinks>
+			<ThingDef>VDE_Dryad_Gaubricmaker</ThingDef>
+		</hyperlinks>
+	</GauranlenTreeModeDef>
+	<GauranlenTreeModeDef>
+		<defName>VDE_Nectarmaker</defName>
+		<label>nectarmaker</label>
+		<description>todo.</description>
+		<pawnKindDef>VDE_Dryad_Nectarmaker</pawnKindDef>
+		<drawPosition>(0.833, 0.5)</drawPosition>
+		<displayedStats>
+			<li>MaxHitPoints</li>
+			<li>MoveSpeed</li>
+		</displayedStats>
+		<hyperlinks>
+			<ThingDef>VDE_Dryad_Nectarmaker</ThingDef>
+		</hyperlinks>
+	</GauranlenTreeModeDef>
+</Defs>

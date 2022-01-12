@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/GauranlenTreeModeDef[defName="VDE_Stonedigger"]/drawPosition</xpath>
+				<value>
+					<drawPosition>(1.666, 0)</drawPosition>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/GauranlenTreeModeDef[defName="VDE_Spitter"]/drawPosition</xpath>
+				<value>
+					<drawPosition>(1.666, 0.1665)</drawPosition>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/GauranlenTreeModeDef[defName="VDE_Gaubricmaker"]/drawPosition</xpath>
+				<value>
+					<drawPosition>(1.666, 0.333)</drawPosition>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/GauranlenTreeModeDef[defName="VDE_Nectarmaker"]/drawPosition</xpath>
+				<value>
+					<drawPosition>(1.666, 0.5)</drawPosition>
+				</value>
+			</li>
+			
+		
+
+
+
+		</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
