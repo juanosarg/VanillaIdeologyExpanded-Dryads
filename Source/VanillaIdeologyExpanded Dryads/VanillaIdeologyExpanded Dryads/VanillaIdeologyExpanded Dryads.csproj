@@ -39,6 +39,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="VFECore">
+      <HintPath>References\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDriver_MergeIntoAwakeningCocoon.cs" />

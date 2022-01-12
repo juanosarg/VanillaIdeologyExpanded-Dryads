@@ -113,9 +113,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Draftable">
-				
-			</li>
+			
 			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
 				<requiredCount>3</requiredCount>
 				<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>

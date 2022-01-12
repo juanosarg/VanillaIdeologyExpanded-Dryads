@@ -17,16 +17,18 @@ namespace VanillaIdeologyExpanded_Dryads
         }
     }
 
-    public class CompPawnMerge : ThingComp
+    public class CompPawnMerge : ThingComp, AnimalBehaviours.PawnGizmoProvider
     {
         public CompProperties_PawnMerge Props => base.props as CompProperties_PawnMerge;
-        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+
+        
+        public IEnumerable<Gizmo> GetGizmos()
         {
-            Log.Message("Animal detected");
+          
             var pawns = Find.Selector.SelectedPawns.Where(p => p.def == parent.def).ToList();
             if (pawns.Count >= Props.requiredCount)
             {
-                Log.Message("Count detected");
+               
                 yield return new Command_Action
                 {
                     defaultLabel = "TEST",
@@ -37,15 +39,19 @@ namespace VanillaIdeologyExpanded_Dryads
             };
             }
         }
+      
         public void SetDryadAwakenPod(List<Pawn> pawns)
         {
             Thing podthing=null;
             for (int i= 0; i< pawns.Count; i++) {
-                if (i == 0) {
+                if (i == 0 && pawns[0]!=null) {
                     IntVec3 pos = pawns[i].Position;
                     Map map = pawns[i].Map;
-                    pawns[i].Destroy();
-                    podthing = GenSpawn.Spawn(ThingMaker.MakeThing(InternalDefOf.VDE_AwakeningCocoon, null), pos, map, WipeMode.Vanish);
+                    if (map != null) {
+                        pawns[i].Destroy();
+                        podthing = GenSpawn.Spawn(ThingMaker.MakeThing(InternalDefOf.VDE_AwakeningCocoon, null), pos, map, WipeMode.Vanish);
+                    }
+                    
 
                 } else {
 
