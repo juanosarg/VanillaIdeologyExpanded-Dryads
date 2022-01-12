@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>VDE_AwakenedDryad_Carrier</defName>
+		<label>awakened carrier dryad</label>
+		<description>todo.</description>
+		<statBases>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<MoveSpeed>2.95</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>1</FilthRate>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>2.4</baseBodySize>
+			<animalType>Dryad</animalType>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<baseHealthScale>1.75</baseHealthScale>
+			<baseHungerRate>0.001</baseHungerRate>
+			<hediffGiverSets Inherit="False" />
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
+			<hasGenders>false</hasGenders>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<wildness>0.4</wildness>
+			<petness>0</petness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>2</lifeExpectancy>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Dryad_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>VDE_Dryad</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
+		<defName>VDE_AwakenedDryad_Carrier</defName>
+		<label>awakened carrier dryad</label>
+		<race>VDE_AwakenedDryad_Carrier</race>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DryadAwakenedCarrier/DryadAwakenedCarrier</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Carrier/Dessicated_DryadCarrier</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

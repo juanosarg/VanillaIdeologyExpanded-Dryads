@@ -40,7 +40,24 @@
 				</value>
 			</li>
 			
-		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/GauranlenTreeModeDef[defName="VDE_Spitter"]/label</xpath>
+				<value>
+					<label>acidic spitter</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="VDE_Dryad_Spitter"]/label</xpath>
+				<value>
+					<label>acidic spitter dryad</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/PawnKindDef[defName="VDE_Dryad_Spitter"]/label</xpath>
+				<value>
+					<label>acidic spitter dryad</label>
+				</value>
+			</li>
 
 
 

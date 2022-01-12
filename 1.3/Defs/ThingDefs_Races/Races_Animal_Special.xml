@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<!-- Stonedigger -->
-
+	<!-- Stonedigger -->
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Stonedigger</defName>
 		<label>stonedigger dryad</label>
 		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
-			<MoveSpeed>2.5</MoveSpeed>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MoveSpeed>2.24</MoveSpeed>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
 		</statBases>
-		
+		<comps>
+			<li class="AnimalBehaviours.CompProperties_DigPeriodically">
+				<ticksToDig>120000</ticksToDig>
+				<onlyWhenTamed>true</onlyWhenTamed>
+				<digBiomeRocks>true</digBiomeRocks>
+			</li>
+		</comps>
 		<race>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<lifeStageAges>
@@ -22,8 +26,8 @@
 					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<baseBodySize>0.65</baseBodySize>
-			<baseHealthScale>1.3</baseHealthScale>
+			<baseBodySize>0.667</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
 			<trainability>Intermediate</trainability>
 			<trainableTags>
 				<li>Basic</li>
@@ -35,7 +39,6 @@
 			</untrainableTags>
 		</race>
 	</ThingDef>
-
 	<PawnKindDef ParentName="DryadKindBase">
 		<defName>VDE_Dryad_Stonedigger</defName>
 		<label>stonedigger dryad</label>
@@ -53,40 +56,36 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-
 	<!-- Spitter -->
-
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Spitter</defName>
 		<label>spitter dryad</label>
 		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
-			<MoveSpeed>2.5</MoveSpeed>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MoveSpeed>3</MoveSpeed>
+		
 		</statBases>
-		<!--<verbs>
+		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
+				<accuracyShort>.8</accuracyShort>
+				<accuracyMedium>.75</accuracyMedium>
+				<accuracyLong>.5</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>AA_PoisonBolt</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<defaultProjectile>VDE_AcidBolt</defaultProjectile>
+				<warmupTime>2.2</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>2</minRange>
-				<range>30</range>
-				<soundCast>AA_PoisonBolt</soundCast>
+				<range>19.9</range>
+				<soundCast>VDE_AcidBolt</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<label>venomous spit</label>
+				<label>acidic spit</label>
 				<commonality>.8</commonality>
 			</li>
 
 
-		</verbs>-->
+		</verbs>
 		<race>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<lifeStageAges>
@@ -96,8 +95,8 @@
 					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<baseBodySize>0.65</baseBodySize>
-			<baseHealthScale>1.3</baseHealthScale>
+			<baseBodySize>0.667</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
 			<trainability>Intermediate</trainability>
 			<trainableTags>
 				<li>Basic</li>
@@ -109,7 +108,6 @@
 			</untrainableTags>
 		</race>
 	</ThingDef>
-
 	<PawnKindDef ParentName="DryadKindBase">
 		<defName>VDE_Dryad_Spitter</defName>
 		<label>spitter dryad</label>
@@ -127,20 +125,26 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Gaubricmaker -->
-
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Gaubricmaker</defName>
 		<label>gaubricmaker dryad</label>
 		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
-		
 		<statBases>
-			<MoveSpeed>2.5</MoveSpeed>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MoveSpeed>3</MoveSpeed>
+			
 		</statBases>
-		
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>VDE_Gaubric</resourceDef>
+				<gatheringIntervalDays>10</gatheringIntervalDays>
+				<resourceAmount>45</resourceAmount>
+				<customResourceString>VDE_GaubricDesc</customResourceString>
+
+			</li>
+
+
+		</comps>
 		<race>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<lifeStageAges>
@@ -150,8 +154,8 @@
 					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<baseBodySize>0.65</baseBodySize>
-			<baseHealthScale>1.3</baseHealthScale>
+			<baseBodySize>0.667</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
 			<trainability>Intermediate</trainability>
 			<trainableTags>
 				<li>Basic</li>
@@ -163,7 +167,6 @@
 			</untrainableTags>
 		</race>
 	</ThingDef>
-
 	<PawnKindDef ParentName="DryadKindBase">
 		<defName>VDE_Dryad_Gaubricmaker</defName>
 		<label>gaubricmaker dryad</label>
@@ -181,20 +184,24 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Nectarmaker -->
-
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Nectarmaker</defName>
 		<label>nectarmaker dryad</label>
 		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
-			<MoveSpeed>3.2</MoveSpeed>
-
+			<MoveSpeed>2</MoveSpeed>
 		</statBases>
-		
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Ambrosia</thingToSpawn>
+				<spawnCount>30</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
 		<race>
-			
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<lifeStageAges>
 				<li>
@@ -203,8 +210,8 @@
 					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<baseBodySize>0.65</baseBodySize>
-			<baseHealthScale>3</baseHealthScale>
+			<baseBodySize>0.667</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
 			<trainability>Intermediate</trainability>
 			<trainableTags>
 				<li>Basic</li>
@@ -215,10 +222,7 @@
 				<li>Help</li>
 			</untrainableTags>
 		</race>
-
-		
 	</ThingDef>
-
 	<PawnKindDef ParentName="DryadKindBase">
 		<defName>VDE_Dryad_Nectarmaker</defName>
 		<label>nectarmaker dryad</label>
@@ -236,9 +240,4 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
-	
-
-
-
 </Defs>

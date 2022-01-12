@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>VDE_AcidBolt</defName>
+		<label>acid spit</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/VDE_PoisonBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>VDE_AcidSpit</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<stoppingPower>1.1</stoppingPower>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+
+
+
+
+</Defs>
