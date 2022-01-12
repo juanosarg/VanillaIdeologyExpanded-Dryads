@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+
+<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "Dryad_Carrier"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Dryad_Carrier"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Dryad_Carrier"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+					<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+
+</Patch>
+

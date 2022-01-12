@@ -120,6 +120,7 @@
 				<requiredCount>3</requiredCount>
 				<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
 			</li>
+			
 		</comps>
 	</ThingDef>
 	<PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">

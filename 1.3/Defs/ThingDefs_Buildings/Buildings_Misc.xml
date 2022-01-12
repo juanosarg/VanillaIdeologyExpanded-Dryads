@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+ 
+  <ThingDef>
+    <defName>VDE_AwakeningCocoon</defName>
+    <label>awakening pod</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Building</category>
+    <description>todo.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/UpgradeCarrier</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.25</Flammability>
+    </statBases>
+    <fillPercent>0.5</fillPercent>
+    <selectable>true</selectable>
+    <comps>
+      <li Class="CompProperties_DryadCocoon">
+        <compClass>CompGaumakerPod</compClass>
+        <daysToComplete>4</daysToComplete>
+      </li>
+    </comps>
+  </ThingDef>
+
+ 
+
+</Defs>

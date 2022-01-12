@@ -11,7 +11,14 @@
 			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
 		</statBases>
 		<comps>
-			<li class="AnimalBehaviours.CompProperties_DigPeriodically">
+			
+			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+				<customThingToDig>			
+					
+				</customThingToDig>
+				<customAmountToDig>				
+					
+				</customAmountToDig>
 				<ticksToDig>120000</ticksToDig>
 				<onlyWhenTamed>true</onlyWhenTamed>
 				<digBiomeRocks>true</digBiomeRocks>

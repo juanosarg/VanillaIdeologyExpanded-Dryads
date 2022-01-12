@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompPawnMerge.cs" />
+    <Compile Include="AI\JobDriver_MergeIntoAwakeningCocoon.cs" />
+    <Compile Include="Comps\CompPawnMerge.cs" />
+    <Compile Include="DefOf\InternalDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,8 +52,9 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.0</Version>
-	  <ExcludeAssets>runtime</ExcludeAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

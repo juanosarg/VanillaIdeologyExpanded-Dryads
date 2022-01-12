@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <JobDef>
+    <defName>VDE_MergeIntoAwakeningCocoon</defName>
+    <driverClass>VanillaIdeologyExpanded_Dryads.JobDriver_MergeIntoAwakeningCocoon</driverClass>
+    <reportString>merging into TargetB.</reportString>
+  </JobDef>
+
+ 
+
+</Defs>

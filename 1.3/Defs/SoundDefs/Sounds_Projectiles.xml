@@ -4,7 +4,7 @@
 	<!-- ======================== Acid  Bolt ======================== -->
 
 	<SoundDef>
-		<defName></defName>
+		<defName>VDE_AcidBolt</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
