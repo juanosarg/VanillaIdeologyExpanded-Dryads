@@ -112,6 +112,15 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Draftable">
+				
+			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
+			</li>
+		</comps>
 	</ThingDef>
 	<PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
 		<defName>VDE_AwakenedDryad_Carrier</defName>
