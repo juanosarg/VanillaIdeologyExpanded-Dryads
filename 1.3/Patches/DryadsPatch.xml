@@ -11,7 +11,10 @@
 				<comps>
 					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
 						<requiredCount>3</requiredCount>
-						<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
+						<podToBuild>VDE_CarrierAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeCarrier</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
 					</li>
 				</comps>
 			</value>
@@ -21,7 +24,41 @@
 			<value>
 				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
 					<requiredCount>3</requiredCount>
-					<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
+						<podToBuild>VDE_CarrierAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeCarrier</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThingDef[defName = "Dryad_Clawer"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Dryad_Clawer"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+						<requiredCount>3</requiredCount>
+						<podToBuild>VDE_ClawerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeClawer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Dryad_Clawer"]/comps</xpath>
+			<value>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+					<requiredCount>3</requiredCount>
+						<podToBuild>VDE_ClawerAwakeningCocoon</podToBuild>
+						<gizmoImage>Things/Building/UpgradeClawer</gizmoImage>
+						<gizmoLabel>VDE_Awaken</gizmoLabel>
+						<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
 				</li>
 			</value>
 		</match>

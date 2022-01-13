@@ -8,7 +8,7 @@
 		<label>acid spit</label>
 		
 		<graphicData>
-			<texPath>Things/Projectiles/VDE_PoisonBolt</texPath>
+			<texPath>Things/Projectiles/DryadSpitter_Spit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

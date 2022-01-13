@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VDE_AwakenedDryad_Carrier</defName>
 		<label>awakened carrier dryad</label>
-		<description>todo.</description>
+		<description>A dryad caste specialized in carrying items. Its awakening has improved their size, carrying capacity and added functionality as a pack animal for long-distance hauling.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
 		<statBases>
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<MoveSpeed>2.95</MoveSpeed>
@@ -12,6 +12,15 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>1</FilthRate>
 		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -20,7 +29,7 @@
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.001</baseHungerRate>
-			<hediffGiverSets Inherit="False" />
+			<hediffGiverSets Inherit="False"/>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
@@ -29,7 +38,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>2</lifeExpectancy>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -112,24 +121,14 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			
-			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
-				<requiredCount>3</requiredCount>
-				<mergeTo>VDE_AwakenedDryad_Carrier</mergeTo>
-			</li>
-			
-		</comps>
 	</ThingDef>
-	<PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VDE_AwakenedDryad_Carrier</defName>
 		<label>awakened carrier dryad</label>
 		<race>VDE_AwakenedDryad_Carrier</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-		
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedCarrier/DryadAwakenedCarrier</texPath>
@@ -140,7 +139,312 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Carrier/Dessicated_DryadCarrier</texPath>
+					<texPath>Things/Pawn/Animal/DryadAwakenedCarrier/Dessicated_DryadAwakenedCarrier</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>VDE_AwakenedDryad_Clawer</defName>
+		<label>awakened clawer dryad</label>
+		<description>A dryad caste with huge claws that is specialized in aggression and damage-dealing attacks. Its awakening has improved their combat prowess and strengthened the wings, permitting them to ignore terrain movement penalties.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>1</FilthRate>
+		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Draftable">
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>1.4</baseBodySize>
+			<animalType>Dryad</animalType>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<baseHealthScale>1.4</baseHealthScale>
+			<baseHungerRate>0.001</baseHungerRate>
+			<hediffGiverSets Inherit="False"/>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
+			<hasGenders>false</hasGenders>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<wildness>0.4</wildness>
+			<petness>0</petness>
+			<trainability>Intermediate</trainability>
+			<lifeExpectancy>2</lifeExpectancy>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Dryad_Clawer_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Clawer_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>VDE_Dryad</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.8</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.8</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VDE_AwakenedDryad_Clawer</defName>
+		<label>awakened clawer dryad</label>
+		<race>VDE_AwakenedDryad_Clawer</race>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DryadAwakenedClawer/DryadAwakenedClawer</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/DryadAwakenedClawer/Dessicated_DryadAwakenedClawer</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>VDE_AwakenedDryad_Barkskin</defName>
+		<label>awakened barkskin dryad</label>
+		<description>A dryad caste specialized in absorbing hits during combat. Its awakening has created multiple layers of hardened bark and deadened all pain receptors. Can act as a mobile form of cover.\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+		<statBases>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<MoveSpeed>3.4</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>1</FilthRate>
+		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+				<timeToApplyInTicks>7200000</timeToApplyInTicks>
+				<hediffsToApply>
+					<li>VDE_SeparationSickness</li>
+				</hediffsToApply>
+				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+			</li>
+			
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>VDE_NoPain</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Draftable">
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>1.4</baseBodySize>
+			<animalType>Dryad</animalType>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<baseHealthScale>2.2</baseHealthScale>
+			<baseHungerRate>0.001</baseHungerRate>
+			<hediffGiverSets Inherit="False"/>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
+			<hasGenders>false</hasGenders>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<wildness>0.4</wildness>
+			<petness>0</petness>
+			<trainability>Intermediate</trainability>		
+			<lifeExpectancy>2</lifeExpectancy>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Dryad_Barkskin_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>VDE_Dryad</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VDE_AwakenedDryad_Barkskin</defName>
+		<label>awakened barkskin dryad</label>
+		<race>VDE_AwakenedDryad_Barkskin</race>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DryadAwakenedBarkskin/DryadAwakenedBarkskin</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/DryadAwakenedBarkskin/Dessicated_DryadAwakenedBarkskin</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

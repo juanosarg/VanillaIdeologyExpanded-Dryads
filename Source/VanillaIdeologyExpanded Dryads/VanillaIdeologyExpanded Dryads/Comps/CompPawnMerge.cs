@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RimWorld;
 using Verse;
+using UnityEngine;
+using Verse.AI;
+using RimWorld.Planet;
 
 namespace VanillaIdeologyExpanded_Dryads
 {
-    public class CompProperties_PawnMerge : CompProperties
-    {
-        public int requiredCount;
-        public PawnKindDef mergeTo;
-        public CompProperties_PawnMerge()
-        {
-            this.compClass = typeof(CompPawnMerge);
-        }
-    }
+   
 
     public class CompPawnMerge : ThingComp, AnimalBehaviours.PawnGizmoProvider
     {
@@ -31,7 +25,9 @@ namespace VanillaIdeologyExpanded_Dryads
                
                 yield return new Command_Action
                 {
-                    defaultLabel = "TEST",
+                    defaultLabel = Props.gizmoLabel.Translate(),
+                    defaultDesc = Props.gizmoDesc.Translate(),
+                    icon = ContentFinder<Texture2D>.Get(Props.gizmoImage, true),
                     action = delegate
                     {
                         SetDryadAwakenPod(pawns);
@@ -43,20 +39,34 @@ namespace VanillaIdeologyExpanded_Dryads
         public void SetDryadAwakenPod(List<Pawn> pawns)
         {
             Thing podthing=null;
-            for (int i= 0; i< pawns.Count; i++) {
+            for (int i= 0; i< pawns.Count; i++)
+            {
+
+                List<Thing> connectedThings = pawns[i].connections.ConnectedThings;
+                for (int num = connectedThings.Count - 1; num >= 0; num--)
+                {
+                    connectedThings[num].TryGetComp<CompTreeConnection>()?.RemoveDryad(pawns[i]);
+                    
+                }
+              
                 if (i == 0 && pawns[0]!=null) {
                     IntVec3 pos = pawns[i].Position;
                     Map map = pawns[i].Map;
                     if (map != null) {
-                        pawns[i].Destroy();
-                        podthing = GenSpawn.Spawn(ThingMaker.MakeThing(InternalDefOf.VDE_AwakeningCocoon, null), pos, map, WipeMode.Vanish);
+                                         
+                      
+                        pawns[i].DeSpawn();
+                        Find.WorldPawns.PassToWorld(pawns[i], PawnDiscardDecideMode.Discard);
+                        podthing = GenSpawn.Spawn(ThingMaker.MakeThing(Props.podToBuild, null), pos, map, WipeMode.Vanish);
                     }
                     
 
-                } else {
+                } else if (podthing!=null) {
 
-                    JobMaker.MakeJob(InternalDefOf.VDE_MergeIntoAwakeningCocoon, pawns[i], podthing);
+                    Job job = JobMaker.MakeJob(InternalDefOf.VDE_MergeIntoAwakeningCocoon, pawns[i], podthing);
+                    pawns[i].jobs.StartJob(job);
                 }
+
             
             }
         }

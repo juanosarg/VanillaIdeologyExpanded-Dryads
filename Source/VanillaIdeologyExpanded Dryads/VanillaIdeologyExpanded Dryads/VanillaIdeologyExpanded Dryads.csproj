@@ -47,6 +47,9 @@
   <ItemGroup>
     <Compile Include="AI\JobDriver_MergeIntoAwakeningCocoon.cs" />
     <Compile Include="Comps\CompPawnMerge.cs" />
+    <Compile Include="Comps\CompSpawnAwakened.cs" />
+    <Compile Include="Comps\Properties\CompProperties_PawnMerge.cs" />
+    <Compile Include="Comps\Properties\CompProperties_SpawnAwakened.cs" />
     <Compile Include="DefOf\InternalDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

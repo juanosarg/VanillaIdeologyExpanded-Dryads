@@ -7,6 +7,11 @@
 
 	<VDE_GaubricDesc>Gaubric production</VDE_GaubricDesc>
 	
+	<!-- Gizmos -->
+	
+	<VDE_Awaken>Awaken dryads</VDE_Awaken>
+	<VDE_AwakenDesc>Turn three dryads of a type into an awakened version that is free from the trees. This new awakened dryad will act as a normal animal of the colony in most aspects.</VDE_AwakenDesc>
+	<VDE_TicksToSpawn>Awakening in {0}</VDE_TicksToSpawn>
 
 
 </LanguageData>

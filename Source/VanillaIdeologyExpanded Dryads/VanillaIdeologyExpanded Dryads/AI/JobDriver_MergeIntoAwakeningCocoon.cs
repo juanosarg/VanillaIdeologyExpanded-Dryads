@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 using RimWorld;
+using RimWorld.Planet;
 
 namespace VanillaIdeologyExpanded_Dryads
 {
@@ -25,7 +26,9 @@ namespace VanillaIdeologyExpanded_Dryads
 			yield return Toils_General.WaitWith(TargetIndex.B, WaitTicks, true, false);
 			yield return Toils_General.Do(delegate
 			{
-				this.pawn.Destroy();
+				
+				this.pawn.DeSpawn();
+				Find.WorldPawns.PassToWorld(this.pawn, PawnDiscardDecideMode.Discard);
 			});
 			yield break;
 		}

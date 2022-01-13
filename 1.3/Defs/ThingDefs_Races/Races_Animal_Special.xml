@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Stonedigger</defName>
 		<label>stonedigger dryad</label>
-		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+		<description>An extremely easy-going caste of dryad which specializes in finding stone chunks. Absorbs minerals from the ground that help harden its carapace while leaving excessively large pieces aside.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>2.24</MoveSpeed>
 			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
@@ -57,7 +57,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Carrier/Dessicated_DryadCarrier</texPath>
+					<texPath>Things/Pawn/Animal/DryadStonedigger/Dessicated_DryadStonedigger</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -67,7 +67,7 @@
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Spitter</defName>
 		<label>spitter dryad</label>
-		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+		<description>A dryad caste specialized in territorialism and can launch ranged acid projectiles. Though it can dish out tremendous damage, it is vulnerable in melee due to its oversized mouth.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 		
@@ -126,7 +126,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Carrier/Dessicated_DryadCarrier</texPath>
+					<texPath>Things/Pawn/Animal/DryadSpitter/Dessicated_DryadSpitter</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -136,7 +136,7 @@
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Gaubricmaker</defName>
 		<label>gaubricmaker dryad</label>
-		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+		<description>A caste of dryad which specializes in producing a unique shaggy, leather-like material. Together with its Gauranlen tree, this dryad can be sheared for a soft, beautiful, insulative material on an ongoing basis. However, it is slow and ineffective at work or combat.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			
@@ -185,7 +185,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Carrier/Dessicated_DryadCarrier</texPath>
+					<texPath>Things/Pawn/Animal/DryadGaubricmaker/Dessicated_DryadGaubricmaker</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -195,7 +195,7 @@
 	<ThingDef ParentName="DryadBase">
 		<defName>VDE_Dryad_Nectarmaker</defName>
 		<label>nectarmaker dryad</label>
-		<description>todo.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+		<description>A curious dryad caste specialized in ambrosia production. Together with its Gauranlen tree, this dryad can generate invigorating ambrosia on an ongoing basis. However, it is completely defenseless and requires careful attention against threats.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 		</statBases>
@@ -241,7 +241,7 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dryad_Basic/Dessicated_DryadBasic</texPath>
+					<texPath>Things/Pawn/Animal/DryadNectarmaker/Dessicated_DryadNectarmaker</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

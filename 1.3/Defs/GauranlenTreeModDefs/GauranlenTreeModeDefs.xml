@@ -3,7 +3,7 @@
 	<GauranlenTreeModeDef>
 		<defName>VDE_Stonedigger</defName>
 		<label>stonedigger</label>
-		<description>todo.</description>
+		<description>An extremely easy-going caste of dryad which specializes in finding stone chunks. Absorbs minerals from the ground that help harden its carapace while leaving excessively large pieces aside.</description>
 		<pawnKindDef>VDE_Dryad_Stonedigger</pawnKindDef>
 		<drawPosition>(0.833, 0)</drawPosition>
 		<displayedStats>
@@ -17,7 +17,7 @@
 	<GauranlenTreeModeDef>
 		<defName>VDE_Spitter</defName>
 		<label>spitter</label>
-		<description>todo.</description>
+		<description>A dryad caste specialized in territorialism and can launch ranged acid projectiles. Though it can dish out tremendous damage, it is vulnerable in melee due to its oversized mouth.</description>
 		<pawnKindDef>VDE_Dryad_Spitter</pawnKindDef>
 		<drawPosition>(0.833, 0.1665)</drawPosition>
 		<displayedStats>
@@ -33,7 +33,7 @@
 	<GauranlenTreeModeDef>
 		<defName>VDE_Gaubricmaker</defName>
 		<label>gaubricmaker</label>
-		<description>todo.</description>
+		<description>A caste of dryad which specializes in producing a unique shaggy, leather-like material. Together with its Gauranlen tree, this dryad can be sheared for a soft, beautiful, insulative material on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
 		<pawnKindDef>VDE_Dryad_Gaubricmaker</pawnKindDef>
 		<drawPosition>(0.833, 0.333)</drawPosition>
 		<displayedStats>
@@ -47,7 +47,7 @@
 	<GauranlenTreeModeDef>
 		<defName>VDE_Nectarmaker</defName>
 		<label>nectarmaker</label>
-		<description>todo.</description>
+		<description>A curious dryad caste specialized in ambrosia production. Together with its Gauranlen tree, this dryad can generate invigorating ambrosia on an ongoing basis. However, it is completely defenseless and requires careful attention against threats.</description>
 		<pawnKindDef>VDE_Dryad_Nectarmaker</pawnKindDef>
 		<drawPosition>(0.833, 0.5)</drawPosition>
 		<displayedStats>
