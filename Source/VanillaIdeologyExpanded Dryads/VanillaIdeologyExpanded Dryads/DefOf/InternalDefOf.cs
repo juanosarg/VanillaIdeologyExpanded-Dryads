@@ -9,6 +9,8 @@ namespace VanillaIdeologyExpanded_Dryads
     {
        
         public static JobDef VDE_MergeIntoAwakeningCocoon;
+        public static DamageDef VDE_AcidSpit;
+        public static SoundDef VDE_GooPop;
 
 
         static InternalDefOf()

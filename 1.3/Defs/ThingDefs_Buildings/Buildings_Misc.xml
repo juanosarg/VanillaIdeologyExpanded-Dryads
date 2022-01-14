@@ -23,11 +23,9 @@
 			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
 				<ticksToSpawn>60000</ticksToSpawn>
 				<dryadToSpawn>VDE_AwakenedDryad_Carrier</dryadToSpawn>
-				
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef>
 		<defName>VDE_ClawerAwakeningCocoon</defName>
 		<label>clawer awakening pod</label>
@@ -51,7 +49,50 @@
 			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
 				<ticksToSpawn>60000</ticksToSpawn>
 				<dryadToSpawn>VDE_AwakenedDryad_Clawer</dryadToSpawn>
-				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VDE_DryadNest</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>dryad nest</label>
+		<description>A small nest of logs and twigs created by the awakened woodmaker dryad. Animals can sleep in it, but it can also be deconstructed for precious building materials.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>14</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/DryadNest</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<uiIconScale>0.80</uiIconScale>
+		<costList>
+			<WoodLog>75</WoodLog>
+		</costList>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>5</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
 			</li>
 		</comps>
 	</ThingDef>

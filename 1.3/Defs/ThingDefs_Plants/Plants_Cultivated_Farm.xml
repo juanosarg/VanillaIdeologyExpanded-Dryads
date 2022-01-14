@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!--=========================== Tree crops ==============================-->
+
+  <ThingDef ParentName="TreeBase">
+    <defName>VDE_AmbrosiaPalm</defName>
+    <label>ambrosia palm</label>
+    <description>A legendary palm tree which yields the ambrosia fruit. Ambrosia fruit is delicious and produces a drug-like mood boost. It’s a very rare sight to see an Ambrosia tree that can be farmed for numerous years, as most common sights of Ambrosia are of the bush variety.\n\nIts rarity, beauty, and desirability are why ambrosia was named after the food of the ancient Greek gods.</description>
+    <graphicData>
+      <texPath>Things/Building/AmbrosiaPalm</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <minifiedDef IsNull="True" />
+    <ingestible />
+    <plant>
+	 <fertilityMin>0.15</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <growDays>15</growDays>
+      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <sowMinSkill>8</sowMinSkill>    
+      <topWindExposure>0.15</topWindExposure>
+      <immatureGraphicPath>Things/Building/AmbrosiaPalmImmature</immatureGraphicPath>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <forceIsTree>true</forceIsTree>
+      <harvestYield>300</harvestYield>
+      <harvestedThingDef>Ambrosia</harvestedThingDef>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+  </ThingDef>
+
+
+</Defs>
