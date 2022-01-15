@@ -280,8 +280,8 @@
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
 		<graphicData>
-			<texPath>Things/Building/DryadNest</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/DryadNest/DryadNestA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>

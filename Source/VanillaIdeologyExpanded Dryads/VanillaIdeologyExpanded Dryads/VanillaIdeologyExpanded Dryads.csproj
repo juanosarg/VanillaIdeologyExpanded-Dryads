@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="VFECore">
       <HintPath>References\VFECore.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -64,9 +65,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.0</Version>
-      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

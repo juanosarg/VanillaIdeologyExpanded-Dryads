@@ -482,7 +482,7 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
 				<defOfBuilding>VDE_DryadNest</defOfBuilding>
-				<ticksToBuild>60000</ticksToBuild>
+				<ticksToBuild>100</ticksToBuild>
 				<onlyOneExistingPerPawn>true</onlyOneExistingPerPawn>
 			</li>
 		</comps>

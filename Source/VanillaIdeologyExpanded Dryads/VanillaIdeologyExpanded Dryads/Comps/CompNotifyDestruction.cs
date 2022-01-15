@@ -19,17 +19,17 @@ namespace VanillaIdeologyExpanded_Dryads
 
         public override void PostDeSpawn(Map map)
         {
-            NotifyDestructionToComps();
+            NotifyDestructionToComps(map);
         }
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
-            NotifyDestructionToComps();
+            NotifyDestructionToComps(previousMap);
         }
 
-        public void NotifyDestructionToComps()
+        public void NotifyDestructionToComps(Map map)
         {
-            foreach (Pawn p in this.parent.Map.mapPawns.SpawnedColonyAnimals)
+            foreach (Pawn p in map.mapPawns.SpawnedColonyAnimals)
             {
                 AnimalBehaviours.CompBuildPeriodically comp = p.TryGetComp<AnimalBehaviours.CompBuildPeriodically>();
                 if (comp != null)
