@@ -3,12 +3,67 @@
 	<HediffDef ParentName="DiseaseBase">
 		<defName>VDE_SeparationSickness</defName>
 		<label>separation sickness</label>
-		<description>todo.</description>
+		<description>When an awakened dryad reaches 2 years of age, they start getting affected by separation sickness. This sickness is progressive and always lethal. It is caused by the dryad losing its connection to the Gauranlen tree, and not being able to restore it due to being unshackled.\n\nSeparation sickness can be slowed down by medicine, but eventually every Awakened dryad dies.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Cirrhosis</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 60)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Liver</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 40)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Heart</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ChemicalDamageSevere</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 60)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Kidney</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 90)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+		</hediffGivers>
 		<stages>
 			<li>
 				<label>weakened</label>
@@ -52,18 +107,19 @@
 				<severityPerDayTended>-0.15</severityPerDayTended>
 				<baseTendDurationHours>24</baseTendDurationHours>
 			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.HediffCompProperties_PeriodicWounds">
+				<mtbWoundsSecondStage>30000</mtbWoundsSecondStage>
+				<mtbWoundsThirdStage>6000</mtbWoundsThirdStage>
+			</li>
 		</comps>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>VDE_NoPain</defName>
 		<description>This animal has a reduced pain sensitivity, and it takes longer to be downed due to pain.</description>
-
 		<label>no pain sensitivity</label>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-
 		<stages>
 			<li>
 				<painFactor>0.01</painFactor>

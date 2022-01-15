@@ -5,7 +5,7 @@
 		<label>carrier awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -31,7 +31,7 @@
 		<label>clawer awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -57,7 +57,7 @@
 		<label>barkskin awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -83,7 +83,7 @@
 		<label>woodmaker awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -109,7 +109,7 @@
 		<label>medicinemaker awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -135,7 +135,7 @@
 		<label>berrymaker awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -161,7 +161,7 @@
 		<label>stonedigger awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -187,7 +187,7 @@
 		<label>nectarmaker awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -213,7 +213,7 @@
 		<label>spitter awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -239,7 +239,7 @@
 		<label>gaubricmaker awakening pod</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Building</category>
-		<description>todo.</description>
+		<description>An awakened dryad will emerge from this pod in one day.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>

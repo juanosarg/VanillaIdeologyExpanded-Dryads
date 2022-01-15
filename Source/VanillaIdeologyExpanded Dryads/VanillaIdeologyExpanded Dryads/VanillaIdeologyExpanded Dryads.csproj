@@ -54,6 +54,8 @@
     <Compile Include="Comps\Properties\CompProperties_SpawnAwakened.cs" />
     <Compile Include="DeathActionWorker_AcidExplosion.cs" />
     <Compile Include="DefOf\InternalDefOf.cs" />
+    <Compile Include="HediffComps\HediffComp_PeriodicWounds.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_PeriodicWounds.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
