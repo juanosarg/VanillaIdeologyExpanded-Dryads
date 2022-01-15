@@ -18,7 +18,7 @@
 				<customAmountToDig>				
 					
 				</customAmountToDig>
-				<ticksToDig>120000</ticksToDig>
+				<ticksToDig>60000</ticksToDig>
 				<onlyWhenTamed>true</onlyWhenTamed>
 				<digBiomeRocks>true</digBiomeRocks>
 			</li>

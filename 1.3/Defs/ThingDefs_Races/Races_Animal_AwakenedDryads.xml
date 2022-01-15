@@ -35,7 +35,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -186,7 +186,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -342,7 +342,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -499,7 +499,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -596,7 +596,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedWoodmaker/DryadAwakenedWoodmaker</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -604,7 +604,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedWoodmaker/Dessicated_DryadAwakenedWoodmaker</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -657,7 +657,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -839,7 +839,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -997,7 +997,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -1149,7 +1149,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -1246,7 +1246,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedNectarmaker/DryadAwakenedNectarmaker</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1254,7 +1254,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedNectarmaker/Dessicated_DryadAwakenedNectarmaker</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -1318,7 +1318,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -1415,7 +1415,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedSpitter/DryadAwakenedSpitter</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1423,7 +1423,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedSpitter/Dessicated_DryadAwakenedSpitter</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -1470,7 +1470,7 @@
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
-			<hasGenders>false</hasGenders>
+			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.4</wildness>
 			<petness>0</petness>
@@ -1567,7 +1567,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedGaubricmaker/DryadAwakenedGaubricmaker</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1575,7 +1575,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/DryadAwakenedGaubricmaker/Dessicated_DryadAwakenedGaubricmaker</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

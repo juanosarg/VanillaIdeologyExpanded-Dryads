@@ -63,6 +63,7 @@ namespace VanillaIdeologyExpanded_Dryads
 
                 } else if (podthing!=null) {
 
+                    pawns[i].jobs.StopAll();
                     Job job = JobMaker.MakeJob(InternalDefOf.VDE_MergeIntoAwakeningCocoon, pawns[i], podthing);
                     pawns[i].jobs.StartJob(job);
                 }
