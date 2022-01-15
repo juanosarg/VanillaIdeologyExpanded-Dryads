@@ -311,6 +311,8 @@
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
 				<compClass>CompAssignableToPawn_Bed</compClass>
 			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_NotifyDestruction">
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>
