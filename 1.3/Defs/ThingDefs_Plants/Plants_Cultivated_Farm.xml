@@ -36,9 +36,10 @@
       <harvestWork>400</harvestWork>
       <harvestTag>Standard</harvestTag>
       <forceIsTree>true</forceIsTree>
-      <harvestYield>300</harvestYield>
+      <harvestYield>75</harvestYield>
       <harvestedThingDef>Ambrosia</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
+	  <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
   </ThingDef>
 

@@ -11,7 +11,6 @@
 			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
 		</statBases>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
 				<customThingToDig>			
 					
@@ -22,6 +21,13 @@
 				<ticksToDig>120000</ticksToDig>
 				<onlyWhenTamed>true</onlyWhenTamed>
 				<digBiomeRocks>true</digBiomeRocks>
+			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<podToBuild>VDE_StonediggerAwakeningCocoon</podToBuild>
+				<gizmoImage>Things/Building/UpgradeStonedigger</gizmoImage>
+				<gizmoLabel>VDE_Awaken</gizmoLabel>
+				<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
 			</li>
 		</comps>
 		<race>
@@ -70,7 +76,6 @@
 		<description>A dryad caste specialized in territorialism and can launch ranged acid projectiles. Though it can dish out tremendous damage, it is vulnerable in melee due to its oversized mouth.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-		
 		</statBases>
 		<verbs>
 			<li>
@@ -90,9 +95,16 @@
 				<label>acidic spit</label>
 				<commonality>.8</commonality>
 			</li>
-
-
 		</verbs>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<podToBuild>VDE_SpitterAwakeningCocoon</podToBuild>
+				<gizmoImage>Things/Building/UpgradeSpitter</gizmoImage>
+				<gizmoLabel>VDE_Awaken</gizmoLabel>
+				<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+			</li>
+		</comps>
 		<race>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
 			<lifeStageAges>
@@ -139,7 +151,6 @@
 		<description>A caste of dryad which specializes in producing a unique shaggy, leather-like material. Together with its Gauranlen tree, this dryad can be sheared for a soft, beautiful, insulative material on an ongoing basis. However, it is slow and ineffective at work or combat.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			
 		</statBases>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -147,10 +158,14 @@
 				<gatheringIntervalDays>10</gatheringIntervalDays>
 				<resourceAmount>45</resourceAmount>
 				<customResourceString>VDE_GaubricDesc</customResourceString>
-
 			</li>
-
-
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<podToBuild>VDE_GaubricmakerAwakeningCocoon</podToBuild>
+				<gizmoImage>Things/Building/UpgradeGaubricmaker</gizmoImage>
+				<gizmoLabel>VDE_Awaken</gizmoLabel>
+				<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+			</li>
 		</comps>
 		<race>
 			<useMeatFrom>Dryad_Basic</useMeatFrom>
@@ -202,10 +217,17 @@
 		<comps>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Ambrosia</thingToSpawn>
-				<spawnCount>30</spawnCount>
+				<spawnCount>10</spawnCount>
 				<spawnIntervalRange>120000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<podToBuild>VDE_NectarmakerAwakeningCocoon</podToBuild>
+				<gizmoImage>Things/Building/UpgradeNectarmaker</gizmoImage>
+				<gizmoLabel>VDE_Awaken</gizmoLabel>
+				<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
 			</li>
 		</comps>
 		<race>

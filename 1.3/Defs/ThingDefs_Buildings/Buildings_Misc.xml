@@ -52,6 +52,223 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef>
+		<defName>VDE_BarkskinAwakeningCocoon</defName>
+		<label>barkskin awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeBarkskin</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Barkskin</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_WoodmakerAwakeningCocoon</defName>
+		<label>woodmaker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeWoodmaker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Woodmaker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_MedicinemakerAwakeningCocoon</defName>
+		<label>medicinemaker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeMedicinemaker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Medicinemaker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_BerrymakerAwakeningCocoon</defName>
+		<label>berrymaker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeBerrymaker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Berrymaker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_StonediggerAwakeningCocoon</defName>
+		<label>stonedigger awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeStonedigger</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Stonedigger</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_NectarmakerAwakeningCocoon</defName>
+		<label>nectarmaker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeNectarmaker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Nectarmaker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_SpitterAwakeningCocoon</defName>
+		<label>spitter awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeSpitter</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Spitter</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>VDE_GaubricmakerAwakeningCocoon</defName>
+		<label>gaubricmaker awakening pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>todo.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/UpgradeGaubricmaker</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>60000</ticksToSpawn>
+				<dryadToSpawn>VDE_AwakenedDryad_Gaubricmaker</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="BuildingBase">
 		<defName>VDE_DryadNest</defName>
 		<thingClass>Building_Bed</thingClass>

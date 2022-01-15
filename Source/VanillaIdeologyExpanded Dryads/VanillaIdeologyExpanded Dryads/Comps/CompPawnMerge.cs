@@ -20,7 +20,7 @@ namespace VanillaIdeologyExpanded_Dryads
         {
           
             var pawns = Find.Selector.SelectedPawns.Where(p => p.def == parent.def).ToList();
-            if (pawns.Count >= Props.requiredCount)
+            if (pawns.Count == Props.requiredCount)
             {
                
                 yield return new Command_Action
