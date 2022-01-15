@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Vanilla Ideology Expanded - Dryads</name>
-	<author>Oskar Potocki, Sarg Bjornson</author>
+	<author>Oskar Potocki, Sarg Bjornson, Taranchuk, Reann Shepard</author>
 	<supportedVersions><li>1.3</li></supportedVersions>
 	<modDependencies>
 		<li>
@@ -15,16 +15,26 @@
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+			
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
 		<li>brrainz.harmony</li>
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		
 	</loadAfter>
 	<packageId>VanillaExpanded.Ideo.Dryads</packageId>
 	<description>
+Vanilla Ideology Expanded - Dryads is a mod expanding on the selection of gauranlen dryads in the Ideology DLC. Whilst the idea behind them fulfilling the majority of the roles in your colony is neat, the current selection of dryads feels lackluster - they don’t particularly have any powerful abilities worth mentioning.
+This mod changes that - from new dryad types that fill roles not explored before, to upgrades to existing dryads, the whole gauranlen dryad system can finally become a focus point of the colony.
 
+Integration with the Vanilla Ideology Expanded - Anima Theme also means that these new dryads get a reskin that suits Anima style if you have this mod active.
+This mod is meant to enhance Mr Samuel’s new Youtube series with some more dryad variety.
 	</description>
 </ModMetaData>
