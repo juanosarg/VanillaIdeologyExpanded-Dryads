@@ -1128,6 +1128,13 @@
 				</hediffsToApply>
 				<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
 			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Ambrosia</thingToSpawn>
+				<spawnCount>10</spawnCount>
+				<spawnIntervalRange>60000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
 			<li Class="AnimalBehaviours.CompProperties_DieAndChangeIntoOtherDef">
 				<needsDiggableTerrain>true</needsDiggableTerrain>
 				<gizmoImage>Things/Building/AmbrosiaPalm/AmbrosiaPalmA</gizmoImage>
