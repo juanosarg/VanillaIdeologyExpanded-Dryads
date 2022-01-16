@@ -282,6 +282,7 @@
 		<graphicData>
 			<texPath>Things/Building/DryadNest/DryadNestA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -294,6 +295,7 @@
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 			<bed_healPerDay>4</bed_healPerDay>
 			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+			 <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -314,5 +316,9 @@
 			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_NotifyDestruction">
 			</li>
 		</comps>
+		 <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
 	</ThingDef>
 </Defs>

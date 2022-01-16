@@ -23,7 +23,7 @@
       <BeautyOutdoors>2</BeautyOutdoors>
       <Nutrition>1.5</Nutrition>
     </statBases>
-    <minifiedDef IsNull="True" />
+    
     <ingestible />
     <plant>
 	 <fertilityMin>0.15</fertilityMin>
