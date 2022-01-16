@@ -42,8 +42,8 @@ namespace VanillaIdeologyExpanded_Dryads
 			tickCounter--;
 
             if (tickCounter <= 0) {
-				tickCounter = 0;
-				if (this.parent is Building pod && pod.Map != null && pod.Spawned)
+				tickCounter = Props.ticksToSpawn;
+				if (this.parent.Map != null)
 				{
 					DoSpawn();
 					
