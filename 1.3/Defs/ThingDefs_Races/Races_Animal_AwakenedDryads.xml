@@ -37,7 +37,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
@@ -129,6 +129,7 @@
 		<race>VDE_AwakenedDryad_Carrier</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -188,7 +189,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -280,6 +281,7 @@
 		<label>awakened clawer dryad</label>
 		<race>VDE_AwakenedDryad_Clawer</race>
 		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -344,7 +346,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -433,6 +435,7 @@
 		<defName>VDE_AwakenedDryad_Barkskin</defName>
 		<label>awakened barkskin dryad</label>
 		<race>VDE_AwakenedDryad_Barkskin</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -501,7 +504,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -590,6 +593,7 @@
 		<defName>VDE_AwakenedDryad_Woodmaker</defName>
 		<label>awakened woodmaker dryad</label>
 		<race>VDE_AwakenedDryad_Woodmaker</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -659,7 +663,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -748,6 +752,7 @@
 		<defName>VDE_AwakenedDryad_Medicinemaker</defName>
 		<label>awakened medicinemaker dryad</label>
 		<race>VDE_AwakenedDryad_Medicinemaker</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -841,7 +846,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -930,6 +935,7 @@
 		<defName>VDE_AwakenedDryad_Berrymaker</defName>
 		<label>awakened berrymaker dryad</label>
 		<race>VDE_AwakenedDryad_Berrymaker</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -999,7 +1005,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -1088,6 +1094,7 @@
 		<defName>VDE_AwakenedDryad_Stonedigger</defName>
 		<label>awakened stonedigger dryad</label>
 		<race>VDE_AwakenedDryad_Stonedigger</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -1158,7 +1165,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -1248,6 +1255,7 @@
 		<label>awakened nectarmaker dryad</label>
 		<race>VDE_AwakenedDryad_Nectarmaker</race>
 		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -1327,7 +1335,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -1417,6 +1425,7 @@
 		<label>awakened spitter dryad</label>
 		<race>VDE_AwakenedDryad_Spitter</race>
 		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -1479,7 +1488,7 @@
 			<useLeatherFrom>Dryad_Basic</useLeatherFrom>
 			<mateMtbHours>100000</mateMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
+			<wildness>0.5</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
@@ -1568,6 +1577,7 @@
 		<defName>VDE_AwakenedDryad_Gaubricmaker</defName>
 		<label>awakened gaubricmaker dryad</label>
 		<race>VDE_AwakenedDryad_Gaubricmaker</race>
+		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>

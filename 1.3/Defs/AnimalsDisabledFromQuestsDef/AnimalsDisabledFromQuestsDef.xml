@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>VDE_DisabledAnimalFromQuestsToggles</defName>
+		<disabledFromQuestsPawns>			
+			
+			<li>VDE_AwakenedDryad_Carrier</li>
+			<li>VDE_AwakenedDryad_Clawer</li>
+			<li>VDE_AwakenedDryad_Barkskin</li>
+			<li>VDE_AwakenedDryad_Woodmaker</li>
+			<li>VDE_AwakenedDryad_Medicinemaker</li>
+			<li>VDE_AwakenedDryad_Berrymaker</li>
+			<li>VDE_AwakenedDryad_Stonedigger</li>
+			<li>VDE_AwakenedDryad_Nectarmaker</li>
+			<li>VDE_AwakenedDryad_Spitter</li>
+			<li>VDE_AwakenedDryad_Gaubricmaker</li>
+			
+		</disabledFromQuestsPawns>							
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+
+
+
+
+
+</Defs>
