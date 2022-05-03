@@ -1337,7 +1337,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.5</wildness>
 			<petness>0</petness>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
