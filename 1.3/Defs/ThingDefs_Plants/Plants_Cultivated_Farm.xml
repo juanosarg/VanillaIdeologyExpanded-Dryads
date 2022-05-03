@@ -40,8 +40,13 @@
       <harvestedThingDef>Ambrosia</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
 	  <harvestAfterGrowth>0.20</harvestAfterGrowth>
+	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
     </plant>
   </ThingDef>
+
+
+ 
+
 
 
 </Defs>

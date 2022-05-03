@@ -487,6 +487,7 @@
 				<defOfBuilding>VDE_DryadNest</defOfBuilding>
 				<ticksToBuild>60000</ticksToBuild>
 				<onlyOneExistingPerPawn>true</onlyOneExistingPerPawn>
+				<checkForExistingEdifices>true</checkForExistingEdifices>
 			</li>
 		</comps>
 		<race>
@@ -1337,7 +1338,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.5</wildness>
 			<petness>0</petness>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<lifeExpectancy>2</lifeExpectancy>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
